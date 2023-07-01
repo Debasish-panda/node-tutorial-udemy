@@ -43,7 +43,7 @@ app.get('/about', (req, res)=>{
 app.get('/help', (req, res)=>{
     if(!req.query.search){
         return res.send({
-            error: "You have to give something in search"
+            error: "You have to give something in search to find"
         })
     }
     console.log(req.query);
